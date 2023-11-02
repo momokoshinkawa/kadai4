@@ -66,7 +66,7 @@ public class MovieListSortingWithStream {
             String introduction = FilmIntroduction.get(title);
 
             if (introduction != null) {
-                System.out.println(title + " を一言で紹介すると ”" + introduction + "”");
+                System.out.println(title + "を一言で紹介すると" + "”" + introduction + "”");
             } else {
                 System.out.println("Not Found");
             }
