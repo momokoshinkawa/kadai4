@@ -61,18 +61,17 @@ public class MovieListSortingWithStream {
 
 
 //例外処理
-        try {
-            String title = "LALA LAND";
-            String introduction = FilmIntroduction.get(title);
 
-            if (introduction != null) {
-                System.out.println(title + "を一言で紹介すると" + "”" + introduction + "”");
-            } else {
-                System.out.println("Not Found");
-            }
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+        String title = "LION KING";
+        String introduction = FilmIntroduction.get(title);
+
+        if (introduction != null) {
+            System.out.println(title + "を一言で紹介すると" + "”" + introduction + "”");
+        } else {
+            System.out.println("Not Found");
         }
     }
 }
+
+
 
